@@ -1,0 +1,57 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  font-family: "Raleway", sans-serif;
+  font-size: 14px;
+  background-color: hsl(229, 57%, 11%);
+}
+
+.dark-blue {
+  background-color: hsl(228, 56%, 26%);
+}
+.rounded-right {
+  border-top-right-radius: 6rem;
+}
+
+.bg-image {
+  background-color: hsl(229, 57%, 11%);
+}
+.linear-gradient {
+  background: linear-gradient(90deg, hsl(6, 100%, 80%), hsl(335, 100%, 65%));
+}
+
+.speech-bubble {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+@media screen and (min-width: 1040px) {
+  .speech-bubble {
+    top: -40px;
+    left: calc(100% - 100px);
+  }
+  .triangle {
+    display: block;
+    position: absolute;
+    bottom: -20px;
+    right: 0;
+    border-left: 25px solid transparent;
+    border-top: 25px solid white;
+  }
+}
+.attribution {
+  color: white;
+  font-size: 14px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(145, 100%, 66%);
+  text-decoration: none;
+  &:hover {
+    color: hsl(322, 100%, 66%);
+  }
+}
